@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^sajad\.kr [NC]
+RewriteRule ^(.*)$ https://www.sajad.kr/$1 [L,R=301]
+</IfModule>
